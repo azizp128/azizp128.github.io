@@ -1,0 +1,25 @@
+.jumbotron {
+  background-color: #e2edff;
+  padding-top: 5rem;
+}
+
+#projects img {
+  width: 318px;
+  height: 200px;
+}
+
+.contact .container .form-group,
+.contact .container .form-control,
+.contact .container button {
+  margin-top: 10px;
+}
+
+.about,
+.projects,
+.contact {
+  padding-top: 5rem;
+}
+
+.card {
+  margin: auto;
+}
