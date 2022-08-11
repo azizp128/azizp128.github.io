@@ -1,6 +1,15 @@
-.jumbotron {
+body {
   background-color: #e2edff;
+}
+
+.jumbotron {
   padding-top: 5rem;
+}
+
+.jumbotron img {
+  width: 250px;
+  height: 250px;
+  border: solid 2px black;
 }
 
 #projects img {
@@ -16,10 +25,109 @@
 
 .about,
 .projects,
+.gallery,
+.my-keyboards,
 .contact {
   padding-top: 5rem;
 }
 
 .card {
   margin: auto;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+/* My Keyboards Section */
+.keyboard-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.keyboard-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::before {
+  opacity: 0.2;
+}
+
+.keyboard-box::after {
+  content: "KEYBOARD";
+  position: absolute;
+  color: #fff;
+  font-size: 3.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::after {
+  opacity: 0.2;
+}
+
+.keyboard-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+}
+
+.keyboard-box:hover .keyboard-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.keyboard-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.keyboard-img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-img {
+  transform: translate(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }

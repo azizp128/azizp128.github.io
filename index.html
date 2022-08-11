@@ -3,11 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-wi8th, initial-scale=" />
   <title>My Portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -40,6 +43,12 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-keyboards">Keyboards</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -50,11 +59,11 @@
 
   <!-- Jumbotron -->
   <section class="jumbotron text-center">
-    <img src="img/logo.png" alt="Aziz Prabowo" class="rounded-circle img-thumbnail" width="250" height="250" />
-    <h1>Aziz Prabowo</h1>
-    <h6>Artificial Intelligence | Cyber Security | Robotics</h6>
+    <img src="img/logo.png" alt="Aziz Prabowo" class="rounded-circle" />
+    <h1 class="myname">Aziz Prabowo</h1>
+    <h6 class="lead"></h6>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#fff" fill-opacity="1"
+      <path fill="#8ff" fill-opacity=""
         d="M0,128L60,149.3C120,171,240,213,360,197.3C480,181,600,107,720,112C840,117,960,203,1080,202.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
       </path>
     </svg>
@@ -62,16 +71,16 @@
   <!-- akhir Jumbotron -->
 
   <!-- about -->
-  <section class="about" id="about">
+  <section class="about" id="about" style="background-color: #8ff;">
     <div class="container">
       <div class="row text-center mb-3">
-        <div class="col">
+        <div class="col" data-aos="fade-down">
           <h2 class="text-center">About Me</h2>
         </div>
       </div>
 
       <div class="row justify-content-center fs-6 text-center">
-        <div class="col-4 md-4">
+        <div class="col-4 md-4" data-aos="fade-right">
           <p>
             Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Omnis, deleniti laudantium consequatur, ut
             expedita ullam modi temporibus delectus dicta tenetur, illum alias doloremque ex debitis quibusdam quisquam
@@ -80,7 +89,7 @@
           </p>
         </div>
 
-        <div class="col-4 md-4">
+        <div class="col-4 md-4" data-aos="fade-left">
           <p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Voluptatum harum similique officiis veritatis
             laudantium quam, commodi debitis mollitia eum facere, iure nulla ea eius atque, hic optio. Quisquam
             obcaecati, nemo?</p>
@@ -88,7 +97,7 @@
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#e2edff" fill-opacity="1"
+      <path fill="#e2e8ff" fill-opacity=""
         d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
     </svg>
@@ -99,14 +108,14 @@
   <section class="projects" id="projects" style="background-color: #e2edff;">
     <div class="container justify-content-center">
       <div class="row text-center">
-        <div class="col">
+        <div class="col" data-aos="fade-down">
           <h2>My Projects</h2>
         </div>
       </div>
 
       <div class="row" style=" margin-top: 20px;">
         <div class="col-md-4 mb-3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" data-aos="flip-down" data-aos-duration="500">
             <a href="">
               <img src="img/portfolio/ai.jpg" class="card-img-top" alt="Artificial Intelligence" />
             </a>
@@ -118,7 +127,7 @@
         </div>
 
         <div class="col-md-4 mb-3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" data-aos="flip-down" data-aos-duration="500">
             <a href="">
               <img src="img/portfolio/cyber.jpg" class="card-img-top" alt="Cyber Security" />
             </a>
@@ -130,7 +139,7 @@
         </div>
 
         <div class="col-md-4 mb-3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" data-aos="flip-down" data-aos-duration="500">
             <a href="">
               <img src="img/portfolio/robot.jpg" class="card-img-top" alt="Robotics" />
             </a>
@@ -142,7 +151,7 @@
         </div>
       </div>
 
-      <div class="row" style="margin-top: 20px;">
+      <div class="row" style="margin-top: 20px;" data-aos="flip-up" data-aos-duration="500">
         <div class="col-md-4 mb-3">
           <div class="card" style="width: 20rem">
             <a href="">
@@ -156,7 +165,7 @@
         </div>
 
         <div class="col-md-4 mb-3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" data-aos="flip-up" data-aos-duration="500">
             <a href="">
               <img src="img/portfolio/renewable.jpg" class="card-img-top" alt="Renewable Energy" />
             </a>
@@ -168,7 +177,7 @@
         </div>
 
         <div class="col-md-4 mb-3">
-          <div class="card" style="width: 20rem">
+          <div class="card" style="width: 20rem" data-aos="flip-up" data-aos-duration="500">
             <a href="">
               <img src="img/portfolio/education.jpg" class="card-img-top" alt="Education" />
             </a>
@@ -181,62 +190,173 @@
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#fff" fill-opacity="1"
+      <path fill="#8ff" fill-opacity=""
         d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
     </svg>
   </section>
   <!-- akhir portfolio -->
 
-  <!-- contact -->
-  <section class="contact" id="contact"">
-      <div class=" container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h2>Contact Me</h2>
+  <!-- Gallery -->
+  <section id="gallery" class="gallery" style="background-color: #8ff;">
+    <div class="container">
+      <div class="row text-center" data-aos="fade-down">
+        <h2>Gallery</h2>
       </div>
-    </div>
 
-    <div class="row justify-content-center">
-      <div class="col-sm-8 col-sm-offset-2">
-
-        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-          <strong>Terimakasih!</strong> Pesan anda sudah diterima.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <div class=" row justify-content-center">
+        <div class="col-md-3 gallery-gambar">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar1.jpg" alt="Gambar 1" class="img-fluid gallery-img">
+          </a>
         </div>
-
-        <form name="submit-to-google-sheet">
-          <div class="form-group">
-            <label for="nama">Nama</label>
-            <input type="nama" id="nama" class="form-control" placeholder="masukkan nama" name="nama" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" />
-          </div>
-
-          <div class="form-group" id="pesan">
-            <label for="pesan">Pesan</label>
-            <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-
-          <button class="btn btn-primary btn-loading d-none " type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-          </button>
-        </form>
-
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar2.jpg" alt="Gambar 2" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar3.jpg" alt="Gambar 3" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar4.jpg" alt="Gambar 4" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar5.jpg" alt="Gambar 5" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar6.jpg" alt="Gambar 6" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar7.jpg" alt="Gambar 7" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar8.jpg" alt="Gambar 8" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar9.jpg" alt="Gambar 9" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <img src="img/gallery/thumbnails/gambar10.jpg" alt="Gambar 10" class="img-fluid gallery-img">
+          </a>
+        </div>
       </div>
-    </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#0d6efd" fill-opacity="1"
+      <path fill="#e2edff" fill-opacity=""
         d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,160C672,181,768,203,864,202.7C960,203,1056,181,1152,170.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
-      </sv>
+    </svg>
+  </section>
+
+  <!-- Akhir Gallery -->
+
+  <!-- My Keyboards -->
+  <section id="my-keyboards" class="my-keyboards">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2>My Keyboards</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="keyboard-box">
+            <h4 class="keyboard-name">Speed Link</h4>
+            <img class="keyboard-img" src="img/keyboards/thumbnails/keyboard1.png" alt="Speed Link">
+            <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="keyboard-box">
+            <h4 class="keyboard-name">MSI Gaming</h4>
+            <img class="keyboard-img" src="img/keyboards/thumbnails/keyboard2.png" alt="MSI Gaming">
+            <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="keyboard-box">
+            <h4 class="keyboard-name">Lioncast LK300</h4>
+            <img class="keyboard-img" src="img/keyboards/thumbnails/keyboard3.png" alt="Lioncast LK300">
+            <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#8ff" fill-opacity=""
+        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- akhir my keyboards -->
+
+  <!-- contact -->
+  <section class="contact" id="contact" style="background-color: #8ff;">
+    <div class=" container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Pesan anda sudah diterima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <form name="submit-to-google-sheet">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="nama" id="nama" class="form-control" placeholder="masukkan nama" name="nama" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" />
+            </div>
+
+            <div class="form-group" id="pesan">
+              <label for="pesan">Pesan</label>
+              <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+            <button class="btn btn-primary btn-loading d-none " type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0d68fd" fill-opacity=""
+        d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,160C672,181,768,203,864,202.7C960,203,1056,181,1152,170.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!-- akhir contact -->
 
@@ -248,6 +368,37 @@
   <!-- akhir footer -->
 
   <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    const galleryImage = document.querySelectorAll('.gallery-img')
+
+    galleryImage.forEach((img, i) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = i * 100;
+      img.dataset.aosDuration = 1000;
+    })
+
+    AOS.init({
+      once: true,
+      duration: 2000,
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Artificial Intelligence | Cyber Security | Robotics' })
+    gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, rotateY: 360 })
+    gsap.from('.navbar', { duration: 1.5, y: "-100%", opacity: 0, ease: 'bounce' })
+    gsap.from('.myname', { duration: 1, x: -50, opacity: 0, ease: 'bounce', delay: 0.5 })
+  </script>
+
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycby3QNGuzsQmUcrFK7xlle7dQFtRjWqpJg9opBsxFkf005NQWM4a6gU4jMLw7wcIs68c4w/exec';
     const form = document.forms['submit-to-google-sheet'];
@@ -272,10 +423,14 @@
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+      max: 35,
+      speed: 1000,
+      glare: true
+    });
+  </script>
   <!-- akhir script -->
 </body>
 
